@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS puzzle</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/PuzzleController.js"></script>
+    <script src="Scripts/app.js"></script>
+    <link href="Css/styles.css" rel="stylesheet" />
+
+</head>
+<body ng-app="puzzleApp">
+
+
+    <div ng-include="type"></div>
+
+    <script type="text/ng-template" id="sliding-puzzle">
+
+        <fieldset id="sliding-simple">
+            <legend>Puzzle</legend>
+            <sliding-puzzle size="3x3" src="Image/isentia.jpg" />
+        </fieldset>
+        <br />
+
+    </script>
+</body>
+</html>
